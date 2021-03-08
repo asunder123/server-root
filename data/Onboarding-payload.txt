@@ -1,0 +1,29 @@
+[
+    {
+        "salesforce_org": {
+            "name": "00D6A000002FuY3UAK",
+            "params": {
+                "alg": "RS256",
+                "iss": "3MVG9CEn_O3jvv0x1tpYjteOyPXRIHDgaOXhfiIubHhs3gP4xd0O.OFLrjmnOIQeyQL8W7_n9Oog2kmn6X3Nc",
+                "sub": "integration.user@emoney.com.devpkg",
+                "aud": "https://login.salesforce.com",
+                "expiredTimeInMinutes": 60,
+                "url": "https://emoney-lh-pkg-dev-dev-ed.my.salesforce.com"
+            }
+        },
+        "emoney_offices": [
+            {
+                "emoney_office": {
+                    "name": "salesforceOffice-2",
+                    "params": {
+                        "alg": "RS256",
+                        "iss": "liquidhubclient",
+                        "sub": "liquidhubclient",
+                        "aud": "https://signin-api-beta.emoneyadvisor.com/connect/token",
+                        "expiredTimeInMinutes": 60
+                    }
+                }
+            }
+        ]
+    }
+]

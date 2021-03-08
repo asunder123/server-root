@@ -1,0 +1,1 @@
+java -Dspring.profiles.active=api-qa -jar ./bin/emx-api-app.jar --spring.config.location=classpath:application.yml,file:./resources/application-api-qa.yml

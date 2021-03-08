@@ -1,0 +1,217 @@
+{
+	"mappings": [{
+			"org_object": {
+				"org": "00D6A000002FuY3UAK",
+				"sf_entity": "Alert__C",
+				"emx_entity": "alert",
+				"sf_record_type": "",
+				"active": 1
+			},
+			"entity": [{
+					"sf_name": "Emoney_Client__r",
+					"sf_type": "id",
+					"emx_name": "id",
+					"emx_type": "crmid"
+				},
+				{
+					"sf_name": "Emoney_Id__c",
+					"sf_type": "reference",
+					"emx_name": "alertId",
+					"emx_type": "parentid"
+				},
+				{
+					"sf_name": "timestamp__c",
+					"sf_type": "boolean",
+					"emx_name": "timeStamp",
+					"emx_type": "boolean"
+				},
+				{
+					"sf_name": "subject__c",
+					"sf_type": "date",
+					"emx_name": "subject",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "description__c",
+					"sf_type": "string",
+					"emx_name": "description",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "display_Name__c",
+					"sf_type": "string",
+					"emx_name": "displayName",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "dismissed__c",
+					"sf_type": "datetime",
+					"emx_name": "dismissed",
+					"emx_type": "datetime"
+				},
+				{
+					"sf_name": "Emoney_Client_Id__c",
+					"sf_type": "string",
+					"emx_name": "clientId",
+					"emx_type": "string"
+				}
+			]
+		},
+		{
+			"org_object": {
+				"org": "00D6A000002FuY3UAK",
+				"sf_entity": "task",
+				"emx_entity": "task",
+				"sf_record_type": "Emoney Task 101",
+				"active": 1
+			},
+			"entity": [{
+					"sf_name": "eMoney_Id__c",
+					"sf_type": "string",
+					"emx_name": "id",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "eMoney_Id__f",
+					"sf_type": "string",
+					"emx_name": "id",
+					"emx_type": "string"
+				}
+			]
+		},
+		{
+			"org_object": {
+				"org": "00D6A000002FuY3UAK",
+				"sf_entity": "account",
+				"emx_entity": "Client",
+				"sf_record_type": "IndustriesHousehold",
+				"active": 1
+			},
+			"entity": [{
+					"sf_name": "Id",
+					"sf_type": "id",
+					"emx_name": "messageId",
+					"emx_type": "crmid"
+				},
+				{
+					"sf_name": "Id",
+					"sf_type": "id",
+					"emx_name": "id",
+					"emx_type": "id"
+				},
+				{
+					"sf_name": "Marital_Status__c",
+					"sf_type": "string",
+					"emx_name": "maritalStatus",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "Fax",
+					"sf_type": "string",
+					"emx_name": "fax",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "Phone",
+					"sf_type": "string",
+					"emx_name": "homePhone",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "eMoney_Id__c",
+					"sf_type": "string",
+					"emx_name": "eMoneyId",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "BillingStreet",
+					"sf_type": "string",
+					"emx_name": "address1",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "BillingCity",
+					"sf_type": "string",
+					"emx_name": "city",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "BillingState",
+					"sf_type": "string",
+					"emx_name": "state",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "BillingPostalCode",
+					"sf_type": "string",
+					"emx_name": "postalCode",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "Name",
+					"sf_type": "string",
+					"emx_name": "name",
+					"emx_type": "string"
+				}
+			]
+		},
+		{
+			"org_object": {
+				"org": "00D6A000002FuY3UAK",
+				"sf_entity": "task",
+				"emx_entity": "note",
+				"sf_record_type": "eMoney_Note",
+				"active": 1
+			},
+			"entity": [{
+					"sf_name": "Id",
+					"sf_type": "id",
+					"emx_name": "noteId",
+					"emx_type": "id"
+				},
+				{
+					"sf_name": "AccountId",
+					"sf_type": "id",
+					"emx_name": "clientId",
+					"emx_type": "id"
+				},
+				{
+					"sf_name": "Id",
+					"sf_type": "id",
+					"emx_name": "messageId",
+					"emx_type": "crmid"
+				},
+				{
+					"sf_name": "eMoney_Id__c",
+					"sf_type": "string",
+					"emx_name": "eMoneyNoteId",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "Emoney_Client_Id__c",
+					"sf_type": "string",
+					"emx_name": "eMoneyId",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "Subject",
+					"sf_type": "string",
+					"emx_name": "subject",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "Description",
+					"sf_type": "string",
+					"emx_name": "text",
+					"emx_type": "string"
+				},
+				{
+					"sf_name": "WhatId",
+					"sf_type": "reference",
+					"emx_name": "clientIdReference",
+					"emx_type": "parentid"
+				}
+			]
+		}
+	]
+}

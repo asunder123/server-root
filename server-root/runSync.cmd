@@ -1,0 +1,1 @@
+java -Dspring.profiles.active=sync-qa -jar ./bin/emx-sync-app.jar --spring.config.location=classpath:application.yml,file:./resources/application-sync-qa.yml

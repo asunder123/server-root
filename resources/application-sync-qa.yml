@@ -1,0 +1,44 @@
+app.service:
+  name: 'QA profile:'
+
+server:
+  port: 8091
+
+spring:
+  profiles: sync-qa
+  rabbitmq:
+    host: rmq.qa.emx.lhdip.com
+    port: 5672
+    username: emxadmin
+    password: liquid123+
+
+spring.datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://db.dev.emx.lhdip.com:1433;databaseName=emx-qa
+    username: emx-qa
+    password: liquid123+
+
+# YML Code for setting up the Log file Goes here
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: INFO
+    com.integration: INFO
+    org.hibernate: ERROR
+    org.apache.http.wire : DEBUG
+  file: logs/emx-sync-app.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+
+emoney:
+      url: https://api-beta.emoneyadvisor.com
+
+jwttoken:
+    cacheRefreshInMilliSeconds : 120000
+    saleforce:
+      url : https://emoney-lh-pkg-dev-dev-ed.my.salesforce.com/services/oauth2/token
+    emoney:
+      url : https://signin-api-beta.emoneyadvisor.com/connect/token          
+
+    
+    
